@@ -25,12 +25,15 @@ $color-gray_3: #212121;
 
 
 
-[class*="col"]{
+[class*="col-"]{
 	padding-left: 0;
 	padding-right: 0;
 }
 
-
+.form-control{
+	border-color: $color-1;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($color-1, 0.6);
+}
 
 
 
@@ -152,7 +155,6 @@ html{
 
 .list-style-1{
 	ul:not([class]){
-
 		position: relative;
 		li{
 			list-style: none;
@@ -197,8 +199,7 @@ html{
 	&, a, .active{ 
 		color: rgba(black, 0.4);
 		transition: all 0.3s ease-in;
-		font-weight: 500;
-		font-size: em(16, 16);
+		font-size: em(15, 16);
 		a:hover{
 			transform: translateY(-5px);
 			text-decoration: none;
@@ -206,14 +207,13 @@ html{
 		}
 	}
 	.active{
-		a{color: $color-2;}
+		a{color: $color-1;}
 	}
 	& > li + li:before{
 
 		color: rgba(black, 0.4);
 		font-family: FontAwesome;
 		content: "/";
-		font-weight: 700;
 		font-size: 1.5em;
 		margin:0  15px;
 	}

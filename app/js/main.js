@@ -54,8 +54,8 @@ $(function(){
 		navbars		: [{
 			height 	: 2,
 			content : [ 
-									'<div class="close-btn bar">'+
-									'<a  href="#page" ><span class="icon-bar"></span><span class="icon-bar"></span></a>'+
+									'<div class="close-btn close-content bar">'+
+										'<a  href="#page" ><span class="icon-bar"></span><span class="icon-bar"></span></a>'+
 									'</div>'
 								]
 					}, 
@@ -120,6 +120,7 @@ $(function(){
 	});
 	flickityPrevNext( $('.short-productions-carousel') );
 
+	if( $(".short-partners-carousel .carousel-items figure").length > 1 )
 	var carouselPartners = $('.short-partners-carousel .carousel-items').flickity({
 		imagesLoaded: true,
 		autoPlay: false,
@@ -136,7 +137,7 @@ $(function(){
 	});
 	if( $(".short-partnersnew-carousel .carousel-items figure").length > 1 )
 	var carouselPartnersNew = $('.short-partnersnew-carousel .carousel-items').flickity({
-		imagesLoaded: true,
+		imagesLoaded: true,	
 		autoPlay: false,
 		pauseAutoPlayOnHover: true,
 		arrowShape: arrowStyle,
@@ -150,26 +151,6 @@ $(function(){
 		cellAlign: 'center'
 	});
 
-	if( !checkSm() ){
-		window.carouselTour = $('.tour-carousel .carousel-items').flickity({
-			imagesLoaded: true,
-			autoPlay: false,
-			arrowShape: arrowStyle,
-			//cellSelector: '.carousel-cell',
-			pauseAutoPlayOnHover: true,
-			initialIndex: 1,
-			selectedAttraction: 1,
-			friction: 1,
-			prevNextButtons: false,
-			draggable: checkSm(),
-			wrapAround: null,	
-			pageDots: false,
-			contain: false,
-			percentPosition: true,
-			cellAlign: 'center'
-		});
-		flickityPrevNext( $('.tour-carousel') );
-	}
 
 
 

@@ -383,9 +383,9 @@ html{
 		font-weight: 100*$i;
 	}
 }
-@for $i from 0 through 5 {
-	.border-radius-#{$i} {
-		border-radius: ($i*5);	
+@for $i from 0 through 6 {
+	.radius-#{$i} {
+		border-radius: ($i*5)+px;	
 	}	
 }
 
