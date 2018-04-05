@@ -104,21 +104,7 @@ $(function(){
 	}
 
 
-	var carouselProductions = $('.short-productions-carousel .carousel-items').flickity({
-		imagesLoaded: true,
-		autoPlay: false,
-		arrowShape: arrowStyle,
-		prevNextButtons: false,
-		draggable: false,
-		selectedAttraction: 0.1,
-		friction: 1,
-		wrapAround: false,	
-		pageDots: false,
-		contain: false,
-		percentPosition: true,
-		cellAlign: !checkSm() ? '0.025' : 'center'
-	});
-	flickityPrevNext( $('.short-productions-carousel') );
+
 
 	if( $(".short-partners-carousel .carousel-items figure").length > 1 )
 	var carouselPartners = $('.short-partners-carousel .carousel-items').flickity({
@@ -158,8 +144,6 @@ $(function(){
 
 		var carouselMain = 		$('.carousel-article .carousel-main'),
 				carouselNav = 		$('.carousel-article .carousel-nav');
-
-		var historyCarousel = $('.carousel-article .history-carousel').length || null;
 
 		for( var i = 0 ; i < carouselMain.length ; i++ ){
 
@@ -330,7 +314,7 @@ $(function(){
 		   revSlider.revolution({
 					delay:6000,
 					startwidth: checkSm() ? $( window ).width() : checkMd() ? 970 : 1170,
-					startheight: checkSm() ? 450 :  bannerSlider ? 490 : 600,
+					startheight: checkSm() ? 200 :  bannerSlider ? 490 : 600,
 					autoHeight:"off",
 					fullScreenAlignForce:"off",
 

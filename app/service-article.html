@@ -25,6 +25,60 @@
 				<br/> Пожалуйста подключите в настройках браузера Javascript</p>
 		</noscript>
 
+		<!-- form-modal -->
+		<div class="form-modal modal service-modal fade" id="form-modal-service" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+
+					<div class="wrapper-bg"></div>
+
+					<button type="button" class="btn close-content" data-dismiss="modal">
+						<span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+
+					<div class="modal-body">
+
+						 <!-- success-info -->
+						<div class="col-md-12 success-info m-b-30 text-center">
+							<div class="info-suc" id=""></div>
+							<div class="info-err" id=""></div>
+						</div>
+
+						<form method="POST" action="">
+							<h3 class="text-none">Оставить заявку</h3>
+							<div class="row">
+								<!-- NAME -->
+								<div class="col-md-12 m-v-15 p-h-15">
+									<label for="input-1">Имя, фамилия</label>
+									<input type="text" id="input-1" class="form-control" name="name" placeholder="Ваше имя">
+								</div>
+								<!-- EMAIL -->
+								<div class="col-md-12 m-v-15 p-h-15">
+									<label for="input-2">Электронная почта</label>
+									<input type="text" id="input-2" class="form-control" name="email" placeholder="Ваш E-mail">
+								</div>
+								<!-- TEL -->
+								<div class="col-md-12 m-v-15 p-h-15">
+									<label for="input-3">Номер телефона</label>
+									<input type="text" id="input-3" class="form-control" name="tel" placeholder="Ваш телефон">									
+								</div>
+								<!-- MSG -->
+								<div class="textarea p-h-15">
+									<label for="input-3" class="color-1">Сообщение</label>
+									<textarea name="msg" class="textarea form-control" resize="none" placeholder="Сообщение"></textarea>
+								</div>
+							</div>
+
+							<br>
+							<div class="form-footer">
+								<button type="submit" class="text-right btn-def btn-res color-white submit"><b>Отправить</b></button>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- HEADER -->
 		<div class="header-hidden"></div>
@@ -74,8 +128,6 @@
 					</div>
 				</div><!-- ./CONTAINER -->
 			</div><!-- ./HEADER TOP -->
-
-
 		</header>
 		<!-- MIN MENU -->
 		<div id="min-menu">
@@ -171,81 +223,143 @@
 					<div class="breadcrumb-container">
 						<ol class="breadcrumb font-w-6 p-h-0 m-b-0 m-t-15">
 							<li><a href="index.html">Главная</a></li>
-							<li class="active"><a href="">Контакты</a></li>
+							<li><a href="">Каталог</a></li>
+							<li class="active"><a href="">Детская гигиена</a></li>
 						</ol>
 					</div><!-- ./breadcrumb -->
 				</div>
-				<!-- contacts -->
-				<div class="contacts">
-					<div class="container m-v-30 color-black over-hidden">
-						<div class="font-w-9">
-						  <div class="col-md-6 m-v-30 contacts-info pie-flex-center">
-						  	<div>
-							    <div class="contacts-info-item clearfix m-v-15">
-							      <span class="col-xs-1"><img src="img/icons/phone-call.png" alt=""></span>
-							      <span class="col-xs-9">
-							        <p>Контактый телефон</p>
-							        <p><small>+998 (90) 978-73-37</small></p>
-							      </span>
-							    </div>
-							    <div class="contacts-info-item clearfix m-v-15">
-							      <span class="col-xs-1"><img src="img/icons/envelope.png" alt=""></span>
-							      <span class="col-xs-9">
-							        <p>E-mail</p>
-							        <p><small>arkosiyo.uz@gmail.com</small></p>
-							      </span>
-							    </div>
-							    <div class="contacts-info-item clearfix m-v-15">
-							      <span class="col-xs-1"><img src="img/icons/map-marker.png" alt=""></span>
-							      <span class="col-xs-9">
-							        <p>Адрес</p>
-							        <p><small>Республика Узбекистан г.Ташкент. ул.Нукус, д.71</small></p>
-							      </span>
-							    </div>
-						    </div>
-						  </div>
-						  <div class="col-md-6">
-						  	<div class="contacts-feedback box-100 radius-2 bg-color-1 color-white clearfix">
-						  		<form action="" method="get" accept-charset="utf-8">
-						  			<h4 class="color-white" align="center">Заполните форму</h4>
-						  			<div class="col-md-6 p-h-15">
-						  				<input type="text" name="" class="form-control" placeholder="Специальность">
-						  			</div>
-						  			<div class="col-md-6 p-h-15">
-						  				<input type="text" name="" class="form-control" placeholder="Ф.И.О">
-						  			</div>
-						  			<div class="col-md-6 p-h-15">
-						  				<input type="text" name="" class="form-control" placeholder="Телефон">
-						  			</div>
-						  			<div class="col-md-6 p-h-15">
-						  				<input type="text" name="" class="form-control" placeholder="E-mail">
-						  			</div>
-						  			<div class="col-xs-12 p-h-15">
-						  				<textarea type="text" class="form-control" placeholder="Доп. Информация"></textarea>
-						  			</div>
-						  			<div class="col-md-6 p-h-15 m-v-15 inputfile-content">
-						  				<label role="button" class="box-100">
-						  					<span class="btn-def bg-color-3 p-v-10 p-h-15 radius-2">Прекрепить файл</span>
-						  					<input type="file" class="inputHidden" onchange="javascript:this.previousElementSibling.innerText = this.files[0].name">
-						  				</label>
-						  			</div>
-						  			<div class="col-md-6 p-h-15 m-v-15 qnary">
-						  				<a download="Анкета" href="img/logo.png" class="btn-def p-v-10 radius-2">Скачать анкету</a>
-						  			</div>
 
-						  			<div class="btn-content col-xs-12 m-v-45">
-			  							<button class="btn-res btn-def m-auto p-h-60 p-v-15">Отправить</button>
-			  						</div>
-						  		</form>
-						  	</div>
-						  </div>
+				<!-- service-article -->
+				<div class="catalog short-services">
+					<div class="container m-v-30 over-hidden">
+						<div class="entry-header">
+							<h1>Каталог</h1>
 						</div>
+						<!-- service-article-items -->
+						<div class="service-article-items">
+
+							<!-- service-article-item -->
+							<div class="m-v-15 col-xs-12">
+								<div class="carousel-article col-md-5 p-h-15">
+
+								  <div class="carousel carousel-main">
+
+								    <div class="carousel-cell">
+								    	<div class="pie-flex-center">
+								      	<div class="img-content">
+								      		<!-- Оригинальный размер картинки -->
+								        	<a href="img/services/service-article-1-original.jpg" data-fancybox="services-gallery-1">
+								      			<!-- Средний размер картинки -->
+								          	<img src="img/services//service-article-1-medium.jpg">
+								        	</a>
+								      	</div>
+								    	</div>
+								    </div>
+								    <div class="carousel-cell">
+								    	<div class="pie-flex-center">
+								      	<div class="img-content">
+								      		<!-- Оригинальный размер картинки -->
+								        	<a href="img/services/service-article-2-original.jpg" data-fancybox="services-gallery-1">
+								      			<!-- Средний размер картинки -->
+								          	<img src="img/services//service-article-2-medium.jpg">
+								        	</a>
+								      	</div>
+								    	</div>
+								    </div>
+								    <div class="carousel-cell">
+								    	<div class="pie-flex-center">
+								      	<div class="img-content">
+								      		<!-- Оригинальный размер картинки -->
+								        	<a href="img/services/service-article-3-original.jpg" data-fancybox="services-gallery-1">
+								      			<!-- Средний размер картинки -->
+								          	<img src="img/services//service-article-3-medium.jpg">
+								        	</a>
+								      	</div>
+								    	</div>
+								    </div>
+								    <div class="carousel-cell">
+								    	<div class="pie-flex-center">
+								      	<div class="img-content">
+								      		<!-- Оригинальный размер картинки -->
+								        	<a href="img/services/service-article-2-original.jpg" data-fancybox="services-gallery-1">
+								      			<!-- Средний размер картинки -->
+								          	<img src="img/services//service-article-2-medium.jpg">
+								        	</a>
+								      	</div>
+								    	</div>
+								    </div>
+								    <div class="carousel-cell">
+								    	<div class="pie-flex-center">
+								      	<div class="img-content">
+								      		<!-- Оригинальный размер картинки -->
+								        	<a href="img/services/service-article-3-original.jpg" data-fancybox="services-gallery-1">
+								      			<!-- Средний размер картинки -->
+								          	<img src="img/services//service-article-3-medium.jpg">
+								        	</a>
+								      	</div>
+								    	</div>
+								    </div>
+
+								  </div>
+
+								  <div class="carousel carousel-nav">
+								    <div class="carousel-cell">
+								      <div class="img-content">
+								      	<!-- Средний размер картинки -->
+								        <img src="img/services/service-article-1-medium.jpg">
+								      </div>
+								    </div>
+								    <div class="carousel-cell">
+								      <div class="img-content">
+								      	<!-- Средний размер картинки -->
+								        <img src="img/services/service-article-2-medium.jpg">
+								      </div>
+								    </div>
+								    <div class="carousel-cell">
+								      <div class="img-content">
+								      	<!-- Средний размер картинки -->
+								        <img src="img/services/service-article-3-medium.jpg">
+								      </div>
+								    </div>
+								    <div class="carousel-cell">
+								      <div class="img-content">
+								      	<!-- Средний размер картинки -->
+								        <img src="img/services/service-article-2-medium.jpg">
+								      </div>
+								    </div>
+								    <div class="carousel-cell">
+								      <div class="img-content">
+								      	<!-- Средний размер картинки -->
+								        <img src="img/services/service-article-3-medium.jpg">
+								      </div>
+								    </div>
+
+								  </div>
+								</div>
+								<div class="item-content parag-m-v-15 col-md-7 p-h-15">
+									<div class="text-content">
+										<h5>Baby bottles</h5>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+									</div>
+									<div class="btn-content col-xs-8 col-xs-offset-2 col-md-offset-0 col-sm-6 col-md-3">
+										<span class="btn-def m-v-15">
+		          			  <a data-toggle="modal" data-target="#form-modal-service" role="button">Оставить заявку </a>
+		          			</span>
+									</div>
+								</div>
+							</div>
+
+						</div><!-- ./service-article-items -->
+
 					</div>
-				</div><!-- ./contacts -->
-				<!-- map -->
-				<div class="map-contnet">
-					<div id="map-canvas" class="map-container col-md-12 m-t-30"></div>
-				</div><!-- ./map -->
+				</div><!-- ./service-article -->
 
 				<br>
 			</div><!-- ./MAIN-CONTENT -->
@@ -314,154 +428,7 @@
 	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 	
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVUinUZqQAIM1NfbavWbOKtsc3l-XE_ag"></script>
-	<script type="text/javascript">
-	if( document.getElementById("map-canvas") ){
-		var map;
-		function initialize() {
-
-			var mapOptions = {
-				mapTypeId: google.maps.MapTypeId.ROADMAP,
-				mapTypeControl: false,
-				zoom: 12,
-				zoomControl: true,
-				zoomControlOptions: {
-					style: google.maps.ZoomControlStyle.DEFAULT,
-					position: google.maps.ControlPosition.DEFAULT
-				},
-				panControl: true,
-				panControlOptions: {
-					position: google.maps.ControlPosition.LEFT_TOP
-				},
-				streetViewControl: false,
-				scaleControl: false,
-				overviewMapControl: false,
-				center: new google.maps.LatLng(41.34765, 69.354354343)
-			};
-
-			map = new google.maps.Map(document.getElementById('map-canvas'),
-				mapOptions);
-
-			var mapStyles = [{
-				"featureType": "landscape",
-				"stylers": [
-					{ "visibility": "on" },
-					{ "hue": "#0033ff" },
-					{ "saturation": -100 },
-					{ "lightness": 77 },
-					{ "gamma": 0.34 }
-				]
-			}, {
-				"featureType": "water",
-				"stylers": [
-					{ "visibility": "on" },
-					{ "hue": "#ff0000" },
-					{ "saturation": -100 },
-					{ "lightness": 23 },
-					{ "gamma": 1 }
-				]
-			}, {
-				"featureType": "water",
-				"elementType": "labels",
-				"stylers": [
-					{ "visibility": "on" }
-				]
-			}, {
-				"featureType": "administrative",
-				"stylers": [
-					{ "visibility": "on" }
-				]
-			}, {
-				"featureType": "administrative",
-				"elementType": "labels",
-				"stylers": [
-					{ "visibility": "on" }
-				]
-			}, {
-				"featureType": "poi",
-				"stylers": [
-					{ "visibility": "on" },
-					{ "hue": "#ff0000" },
-					{ "saturation": -100 },
-					{ "lightness": 0 },
-					{ "gamma": 1 }
-				]
-			}, {
-				"featureType": "road",
-				"stylers": [
-					{ "visibility": "on" },
-					{ "hue": "#ff0000" },
-					{ "saturation": -100 },
-					{ "lightness": 0 },
-					{ "gamma": 1 }
-				]
-			}, {
-				"featureType": "transit",
-				"stylers": [
-					{ "visibility": "on" },
-					{ "hue": "#ff0000" },
-					{ "saturation": -100 },
-					{ "lightness": 0 },
-					{ "gamma": 1 }
-				]
-			}];
-
-			map.setOptions({
-				styles: mapStyles,
-				disableDefaultUI: true
-			});
-
-			var transitLayer = new google.maps.TransitLayer();
-			transitLayer.setMap(map);
-
-			var bicyclingLayer = new google.maps.BicyclingLayer();
-			bicyclingLayer.setMap(map);
-
-			var infoContent = '<div class="window-content align-center">' +
-				'<p>м. Львов, вул. Мирзо Улугбек, 317</p>' +
-				'</div>';
-
-			var infowindow = new google.maps.InfoWindow({
-				content: infoContent
-			});
-
-			var icon = {
-				path: 'M16.5,51s-16.5-25.119-16.5-34.327c0-9.2082,7.3873-16.673,16.5-16.673,9.113,0,16.5,7.4648,16.5,16.673,0,9.208-16.5,34.327-16.5,34.327zm0-27.462c3.7523,0,6.7941-3.0737,6.7941-6.8654,0-3.7916-3.0418-6.8654-6.7941-6.8654s-6.7941,3.0737-6.7941,6.8654c0,3.7916,3.0418,6.8654,6.7941,6.8654z',
-				anchor: new google.maps.Point(16.5, 51),
-				fillColor: '#22355d',
-				fillOpacity: 1,
-				strokeWeight: 0,
-				scale: 0.85
-			};
-
-			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(41.34765, 69.354354343),
-				map: map,
-				icon: icon,
-				title: 'marker'
-			});
-
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map, marker);
-			});
-		}
-		
-		google.maps.event.addDomListener(window, 'load', initialize);
-		
-		function checkResize() {
-			var center = map.getCenter();
-			google.maps.event.trigger(map, 'resize');
-			map.setCenter(center);
-		}
-
-		window.onresize = checkResize;
-	}
-	</script>
-	<style>
-		#map-canvas{
-			height: 480px;
-		}
-	</style>
+	
 </body>
 
 </html>

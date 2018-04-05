@@ -14232,6 +14232,9 @@ a[target="_blank"] {
 /*
 					-------MAIN-------
 */
+.entry-header p {
+  line-height: 200%; }
+
 .short-about-items figure {
   position: relative; }
   .short-about-items figure:before {
@@ -14534,6 +14537,103 @@ a[target="_blank"] {
   overflow: hidden;
   white-space: pre-line; }
 
+.about .text-content p {
+  line-height: 200%; }
+
+.catalog-services .short-services-items figure {
+  position: relative; }
+  .catalog-services .short-services-items figure:hover .img-content {
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); }
+
+.catalog-services .short-services-items .img-content {
+  -webkit-clip-path: polygon(50% 5%, 100% 0%, 79% 100%, 50% 100%, 20% 100%, 0 0%);
+  clip-path: polygon(50% 5%, 100% 0%, 79% 100%, 50% 100%, 20% 100%, 0 0%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.catalog-services .short-services-items .desc-content {
+  position: relative;
+  width: 220px;
+  height: 60px; }
+  .catalog-services .short-services-items .desc-content h3 {
+    font-size: 1em; }
+
+.partners-items figure .img-content {
+  min-height: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .partners-items figure .img-content.center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .partners-items figure .img-content.top {
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+    -ms-flex-align: end;
+    align-items: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end; }
+  .partners-items figure .img-content.start {
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start; }
+
+.partners-items figure .desc-content {
+  min-height: 150px;
+  margin: 15px 0; }
+
+.service-article-items .carousel-main .img-content {
+  margin: auto; }
+  .service-article-items .carousel-main .img-content .img-content {
+    min-height: 300px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .service-article-items .carousel-main .img-content .img-content.center {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .service-article-items .carousel-main .img-content .img-content.top {
+      -webkit-box-align: end;
+      -webkit-align-items: end;
+      -ms-flex-align: end;
+      align-items: end;
+      -webkit-align-items: flex-end;
+      align-items: flex-end; }
+    .service-article-items .carousel-main .img-content .img-content.start {
+      -webkit-box-align: start;
+      -webkit-align-items: start;
+      -ms-flex-align: start;
+      align-items: start;
+      -webkit-align-items: flex-start;
+      align-items: flex-start; }
+  .service-article-items .carousel-main .img-content .img-content {
+    height: inherit; }
+  .service-article-items .carousel-main .img-content img {
+    width: unset;
+    height: 300px; }
+
+.service-article-items .carousel-main .carousel-cell {
+  text-align: center; }
+
 .gallery-photo .grid-img-item img {
   width: 100%; }
 
@@ -14675,6 +14775,11 @@ html body .tp-bullets.simplebullets.round .bullet {
     background-color: transparent; }
   .flickity-btn-1 .flickity-prev-next-button .arrow {
     fill: #22355d; }
+  @media (min-width: 992px) {
+    .flickity-btn-1 .flickity-prev-next-button .previous svg {
+      left: -20%; }
+    .flickity-btn-1 .flickity-prev-next-button .next svg {
+      right: -20%; } }
 
 .carousel-article {
   position: relative;
