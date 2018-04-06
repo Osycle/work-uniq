@@ -1615,7 +1615,57 @@ a[target="_blank"]{
 		}
 	}
 }
-
+//catalog
+.catalog{
+	.short-services-items{
+		figure{
+			position: relative;
+			;
+			&:hover{
+				.img-content{
+					
+					clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+				}
+				.desc-content{    
+			    box-shadow: none;
+			    top: -80px;
+			    @media ( min-width:992px ) {
+			    	h3{
+			    		color: white;
+			    	}
+						top: -160px;
+						background: transparent;
+			    }
+			  }
+			  .fuller{
+			  	opacity: 1;
+			  }
+			}
+		}
+		.fuller{
+			opacity: 0;
+			transition: all 0.3s ease-in-out;
+			background-color: rgba( black, 0.5 );
+		}
+		.img-content{
+			position: relative;
+			clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+			//transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+			//clip-path: polygon(100% 0, 100% 51%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+			transition: all 0.3s ease-in-out;
+		}
+		.desc-content{
+			transition: all 0.4s ease;
+			position: relative;
+			width: 220px;
+			//width: auto;
+			height: 60px;
+			h3{
+				font-size:1em;
+			}
+		}
+	}
+}
 
 
 //partners

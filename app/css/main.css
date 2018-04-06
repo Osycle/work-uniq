@@ -14561,6 +14561,49 @@ a[target="_blank"] {
   .catalog-services .short-services-items .desc-content h3 {
     font-size: 1em; }
 
+.catalog .short-services-items figure {
+  position: relative; }
+  .catalog .short-services-items figure:hover .img-content {
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+  .catalog .short-services-items figure:hover .desc-content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    top: -80px; }
+    @media (min-width: 992px) {
+      .catalog .short-services-items figure:hover .desc-content {
+        top: -160px;
+        background: transparent; }
+        .catalog .short-services-items figure:hover .desc-content h3 {
+          color: white; } }
+  .catalog .short-services-items figure:hover .fuller, .catalog .short-services-items figure:hover .claf, .catalog .short-services-items figure:hover [data-flicker]:before, .catalog .short-services-items figure:hover .short-about-items figure:before, .short-about-items .catalog .short-services-items figure:hover figure:before, .catalog .short-services-items .short-advantage-items figure:hover .img-content:before, .short-advantage-items .catalog .short-services-items figure:hover .img-content:before, .catalog .short-services-items figure:hover html body .tp-bullets.simplebullets.round .bullet:before, html body .tp-bullets.simplebullets.round .catalog .short-services-items figure:hover .bullet:before, .catalog .short-services-items figure:hover .cell-hover, .catalog .short-services-items figure:hover .min-menu-header .wrapper-bg, .min-menu-header .catalog .short-services-items figure:hover .wrapper-bg, .catalog .short-services-items figure:hover .fullscreen-container .wrapper-bg, .fullscreen-container .catalog .short-services-items figure:hover .wrapper-bg {
+    opacity: 1; }
+
+.catalog .short-services-items .fuller, .catalog .short-services-items .claf, .catalog .short-services-items [data-flicker]:before, .catalog .short-services-items .short-about-items figure:before, .short-about-items .catalog .short-services-items figure:before, .catalog .short-services-items .short-advantage-items figure .img-content:before, .short-advantage-items figure .catalog .short-services-items .img-content:before, .catalog .short-services-items html body .tp-bullets.simplebullets.round .bullet:before, html body .tp-bullets.simplebullets.round .catalog .short-services-items .bullet:before, .catalog .short-services-items .cell-hover, .catalog .short-services-items .min-menu-header .wrapper-bg, .min-menu-header .catalog .short-services-items .wrapper-bg, .catalog .short-services-items .fullscreen-container .wrapper-bg, .fullscreen-container .catalog .short-services-items .wrapper-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.catalog .short-services-items .img-content {
+  position: relative;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.catalog .short-services-items .desc-content {
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: relative;
+  width: 220px;
+  height: 60px; }
+  .catalog .short-services-items .desc-content h3 {
+    font-size: 1em; }
+
 .partners-items figure .img-content {
   min-height: 120px;
   display: -webkit-box;
