@@ -252,6 +252,7 @@
 				background-color: transparent;
 			}
 			&.active{
+				padding: 5px;
 				background-color: $color-1;
 				a{color: white;}
 				&:hover{
@@ -993,7 +994,7 @@ body, #page{
 	@media (max-width: 991px){
 		text-align: center ;
 	}
-	ul{
+	ul:not(.text-center, .text-left){
 		text-align: left;
 	}
 }

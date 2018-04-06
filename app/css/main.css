@@ -13542,6 +13542,7 @@ http://flickity.metafizzy.co
     border: 0;
     background-color: transparent; }
   .pagination-div .pagination li.active {
+    padding: 5px;
     background-color: #22355d;
     border: 1px solid transparent; }
     .pagination-div .pagination li.active a {
@@ -14112,7 +14113,7 @@ body, #page {
   @media (max-width: 991px) {
     .main-content {
       text-align: center; } }
-  .main-content ul {
+  .main-content ul:not(.text-center):not(.text-left) {
     text-align: left; }
 
 .breadcrumb-container {
