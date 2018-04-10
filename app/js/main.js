@@ -314,7 +314,7 @@ $(function(){
 		   revSlider.revolution({
 					delay:6000,
 					startwidth: checkSm() ? $( window ).width() : checkMd() ? 970 : 1170,
-					startheight: checkSm() ? 200 :  bannerSlider ? 490 : 600,
+					startheight: checkSm() ? 200 :  bannerSlider ? 490 : 500,
 					autoHeight:"off",
 					fullScreenAlignForce:"off",
 
